@@ -6,17 +6,14 @@
   font-size: 100%;
 }
 
-html, body{
+body{
   margin: 0;
   padding: 0;
-}
-
-header, nav, main, footer{
-  margin: 0;
+  height: 100vh;
 }
 
 header{
-  height:15vh;
+  height:15%;
   text-align: center;
   align-content: center;
 }
@@ -25,15 +22,16 @@ header h1{
   font-weight: 500;
   font-size: 2.3125rem;
   height: 1.8rem;
+  margin: 0;
 }
 
 header hr{
-  width: 40vw;
+  width: 40%;
   border-color: rgb(107, 156, 173);
 }
 
 nav {
-  height: 10vh;
+  height: 10%;
   background-color: lightblue;
   text-align: center;
   align-content: center;
@@ -56,11 +54,23 @@ nav a{
 /* } */
 
 main {
-  height: 55vh;
+  height: 55%;
   text-align: center;
   align-content: center;
 }
 
 footer {
-  height: 20vh;
+  height: 20%;
+  text-align: center;
+  align-content: center;
+}
+
+footer div{
+  display: inline-block;
+  width: 20vw;
+}
+
+footer hr{
+  display: inline-block;
+  width: 20vw;
 }

@@ -36,7 +36,7 @@
   <footer>
     <hr/>
     <div>
-      <img src="..img/ImagenFooter.png" alt="Imagen Footer">
+      <!-- <img src="..img/ImagenFooter.png" alt="Imagen Footer"> -->
     </div>
     <hr/>
   </footer>
