@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Login - Agradece en Compañía</title>
     <link rel="stylesheet" href="../estilos/style.css">
 </head>
+
 <body>
     <header>
         <h1>Agradece en Compañía</h1>
-        <hr/>
+        <hr />
     </header>
 
     <main>
-        <form action="">
+        <form method="get" action="agradecimiento.php">
             <h2>Inicia sesión</h2>
-            
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com">
-
+            <input type="email" id="email" name="email" placeholder="Introduce tu email">
             <label for="pass">Contraseña</label>
-            <input type="password" id="pass" name="pass" placeholder="Ingresa tu contraseña">
-
-            <div>
-                <input type="checkbox" id="recordar" name="recordar"> 
+            <input type="password" id="pass" name="pass" placeholder="Introduce tu contraseña">
+            <!-- <div>
+                <input type="checkbox" id="recordar" name="recordar">
                 <span>Recordarme</span>
                 <a href="">¿Olvidaste tu contraseña?</a>
-            </div>
-
+            </div> -->
             <button type="submit">Enviar</button>
         </form>
     </main>
 
     <footer>
-        <hr/>
+        <hr />
         <div>
-            <img src="../img/ImagenFooter.png" alt="Logo">
+            <img src="../img/imagenFooter.png" alt="Logo">
         </div>
-        <hr/>
+        <hr />
     </footer>
 </body>
+
 </html>

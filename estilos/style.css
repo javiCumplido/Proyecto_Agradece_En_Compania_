@@ -7,24 +7,23 @@
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
+    height: 100dvh;
+    width: 100dvw;
     font-family: 'Barlow', sans-serif;
     color: #2c3e50;
 }
 
 body {
     background-image: url("../img/fondo.png");
-    background-color: #f4f1ea; /* Color base crema tipo pergamino */
+    background-color: #f4f1ea;
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 90vh;
+    background-size: 50dvh;
     background-attachment: fixed;
-    display: block;
 }
 
 header {
-    height: 15dvh;
+    height: 15%;
     text-align: center;
     padding-top: 2rem;
 }
@@ -38,8 +37,8 @@ header h1 {
 }
 
 header hr {
-    width: 100px;
-    height: 3px;
+    width: 6.25rem;
+    height: .1875rem;
     background-color: #c5a059; /* Dorado San Ignacio */
     border: none;
     margin: 1rem auto;
@@ -50,8 +49,7 @@ nav {
     width: fit-content;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.15); 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(.625rem);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
     padding: 0 2rem;
@@ -78,25 +76,49 @@ main {
     padding-top: 5dvh;
 }
 
-form {
+form, article {
     background: rgba(255, 255, 255, 0.85);
-    width: 40%;
+    height: 100%;
+    width: 60%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.4rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border-top: 4px solid #c5a059;
 }
 
+section {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 1rem;
+}
+
+section div img{
+    width: 100%;
+}
+
+section div{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+
 label {
     display: block;
-    margin-bottom: 0.5rem;
+    height: 5%;
+    margin-bottom: 1rem;
     font-weight: 600;
     color: #1a434e;
 }
 
-select, textarea, button {
+select, textarea, button, input {
     width: 100%;
+    height: 17%;
     margin-bottom: 1.5rem;
     padding: 0.8rem;
     border: 1px solid #ccc;
@@ -108,7 +130,7 @@ select, textarea, button {
 select option::checkmark{
   order: 1;
   padding-left: 1rem;
-  content: "🧠";
+  content: "⛪";
 }
 
 select option{
@@ -134,33 +156,31 @@ select:open::picker-icon {
 }
 
 textarea {
-    height: 120px;
+    height: 20%;
     resize: none;
 }
 
 button {
   color: #1a434e;
   font-weight: 600;
-  width: 20vw;
+  width: 30%;
 }
 
 footer {
-    height: 25dvh;
+    margin-top: 5dvh;
+    height: 20dvh;
     text-align: center;
-    vertical-align: middle;
 }
-
 footer hr {
     display: inline-block;
     width: 25vw;
     border: none;
     border-top: 1px solid #c5a059;
-    vertical-align: middle;
 }
 
 footer div {
     display: inline-block;
-    width: 150px;
+    width: 6rem;
     vertical-align: middle;
     margin: 0 1rem;
 }
@@ -168,5 +188,4 @@ footer div {
 footer img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }

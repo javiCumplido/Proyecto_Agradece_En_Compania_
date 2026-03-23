@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Recibir - Agradece en Compañía</title>
     <link rel="stylesheet" href="../estilos/style.css">
 </head>
+
 <body>
     <header>
         <h1>Agradece en Compañía</h1>
-        <hr/>
+        <hr />
     </header>
 
     <nav>
-        <a href="">Agradecer</a>
-        <a href="">Recibir</a>
-        <a href="">Cerrar Sesión</a>
+        <a href="./agradecimiento.php">Agradecer</a>
+        <a href="#">Recibir</a>
+        <a href="./index.php">Cerrar Sesión</a>
     </nav>
 
     <main>
         <h2>Para Pablo</h2>
-        <div>
-            <div>
-                <img src="../img/jesuita.png" alt="Perfil">
+        <article>
+            <section>
+                <div>
+                    <img src="#" alt="Perfil">
+                </div>
                 <p><strong>Jesuita:</strong></p>
                 <p>Acompaño con la escucha.</p>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <p>
                     <strong>Gracias Pablo</strong> por tu generosidad, por estar siempre dispuesto a escuchar y por brindarme tu apoyo incondicional.
                 </p>
                 <p><strong>¡Eres una gran compañía!</strong></p>
-            </div>
-        </div>
+            </section>
+        </article>
     </main>
 
     <footer>
-        <hr/>
+        <hr />
         <div>
-            <img src="../img/ImagenFooter.png" alt="Logo">
+            <img src="../img/imagenFooter.png" alt="Logo">
         </div>
-        <hr/>
+        <hr />
     </footer>
 </body>
+
 </html>
