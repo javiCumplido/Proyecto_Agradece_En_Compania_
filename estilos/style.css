@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    height: 15%;
+    height: 13%;
     text-align: center;
     padding-top: 2rem;
 }
@@ -41,19 +41,20 @@ header hr {
     height: .1875rem;
     background-color: #c5a059; /* Dorado San Ignacio */
     border: none;
-    margin: 1rem auto;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
 nav {
-    height: 7dvh;
+    height: 5dvh;
     width: fit-content;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.15); 
     backdrop-filter: blur(.625rem);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
-    padding: 0 2rem;
-    line-height: 7dvh;
+    align-content: center;
+    margin-bottom: 1rem;
 }
 
 nav a {
@@ -71,20 +72,21 @@ nav a:hover {
 }
 
 main {
-    height: 53dvh;
+    height: 61dvh;
     text-align: center;
-    padding-top: 5dvh;
 }
 
 form, article {
     background: rgba(255, 255, 255, 0.85);
-    height: 100%;
+    height: 96%;
     width: 60%;
     margin: 0 auto;
     padding: 1.4rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border-top: 4px solid #c5a059;
+    display: inline-block;
+    align-content: center;
 }
 
 section {
@@ -108,23 +110,28 @@ section div{
     text-align: center;
 }
 
+h2{
+    font-size: 2.6em;
+}
+
 label {
+    font-size: 1.5em;
     display: block;
-    height: 5%;
-    margin-bottom: 1rem;
+    margin-top: .7rem;
+    margin-bottom: .4rem;
     font-weight: 600;
     color: #1a434e;
 }
 
 select, textarea, button, input {
-    width: 100%;
-    height: 17%;
-    margin-bottom: 1.5rem;
+    width: 70%;
+    height: 9%;
+    margin-top: .6rem;
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     background: #fff;
-    font-size: 1rem;
+    font-size: .98rem;
 }
 
 select option::checkmark{
@@ -161,27 +168,33 @@ textarea {
 }
 
 button {
-  color: #1a434e;
-  font-weight: 600;
-  width: 30%;
+    color: #1a434e;
+    font-weight: 600;
+    width: 30%;
+    transition: border .5s ease;
+}
+
+button:hover {
+    border: 2px solid #c5a059;
 }
 
 footer {
-    margin-top: 5dvh;
-    height: 20dvh;
-    text-align: center;
+    height: 19dvh;
+    text-align: center; 
+    align-content: center;
 }
 footer hr {
     display: inline-block;
     width: 25vw;
+    vertical-align: middle;
     border: none;
     border-top: 1px solid #c5a059;
 }
 
 footer div {
     display: inline-block;
-    width: 6rem;
     vertical-align: middle;
+    width: 6rem;
     margin: 0 1rem;
 }
 

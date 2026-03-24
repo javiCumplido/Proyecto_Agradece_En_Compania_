@@ -12,7 +12,6 @@ function conectar()
   $conexion->set_charset("utf8");
 
   return $conexion;
-
 }
 
 
@@ -26,22 +25,10 @@ function recogerUsuarios()
 
   $resultado = $conexion->query($sql);
 
-  for ($i = 0; $fila = $resultado->fetch_array() and $i < 2; $i++)
-  {
+  for ($i = 0; $fila = $resultado->fetch_array() and $i < 2; $i++) {
 
     echo '<option value="' . $fila["idAlumno"] . '"' . '>' . $fila["nombre"] . '</option>';
   }
 
   $conexion->close();
-
 }
-
-
-
-function saludar()
-{
-
-  echo "Hola";
-
-}
-

@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
 
   <title>Agradecimiento</title>
-  <link rel="stylesheet" type="text/css" href="../estilos/style.css" />
+  <link rel="stylesheet" href="../estilos/style.css" />
 
 </head>
 
