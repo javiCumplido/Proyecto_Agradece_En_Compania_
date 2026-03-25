@@ -23,9 +23,9 @@
     <a href="../programacion/cerrarSesion.php">Cerrar Sesión</a>
   </nav>
   <main>
-    <form method="get" action="./ver_agradecimientos.php">
-      <label for="">Para:</label>
-      <select name="" id="">
+    <form method="post" action="./insertarAgradecimiento.php">
+      <label for="nombre">Para:</label>
+      <select name="idAlumno" id="nombre" required>
         <button>
           <selectedcontent></selectedcontent>
         </button>
@@ -34,8 +34,8 @@
         recogerUsuarios();
         ?>
       </select>
-      <label for="">Quiero agradecerte:</label>
-      <textarea name="" id="" placeholder="Quiero agradecerte..."></textarea>
+      <label for="mensaje">Quiero agradecerte:</label>
+      <textarea name="mensaje" id="mensaje" placeholder="Quiero agradecerte..." required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </main>

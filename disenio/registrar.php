@@ -15,15 +15,17 @@
 
     <main>
         <h2>Registrate</h2>
-        <form method="post" action="../programacion/inicioSesion.php">
+        <form method="post" action="../programacion/insertarUsuario.php">
             <label for="NIA">NIA</label>
-            <input type="text" name="NIA" id="NIA" placeholder="Introduce tu NIA">
+            <input type="text" name="NIA" id="NIA" placeholder="Introduce tu NIA" required />
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre de usuario" />
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre de usuario" required />
             <label for="contrasenia">Contraseña</label>
-            <input type="password" id="contrasenia" name="contrasenia" placeholder="Introduce tu contraseña" />
+            <input type="password" id="contrasenia" name="contrasenia" placeholder="Introduce tu contraseña" required />
             <label for="jesuita">Jesuita</label>
-            <input type="text" name="jesuita" id="jesuita" placeholder="Introduce tu Jesuita" />
+            <input type="text" name="jesuita" id="jesuita" placeholder="Introduce tu Jesuita" required />
+            <label for="informacion">informacion</label>
+            <textarea name="informacion" id="informacion" placeholder="Introduce la informacion" required></textarea>
             <button type="submit">Registrarme</button>
         </form>
     </main>

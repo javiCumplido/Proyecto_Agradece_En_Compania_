@@ -6,15 +6,16 @@ i<?php
 
   $usuario = $_POST["nombre"];
   $contrasenia = $_POST["contrasenia"];
-  $_SESSION["activo"] = 1;
 
   $conexion = conectar();
 
-  $sql = 'SELECT nombre, contrasenia FROM Usuario WHERE nombre =\'' . $usuario . '\' AND contrasenia = \'' . $contrasenia . '\'';
+  $sql = 'SELECT idAlumno FROM Usuario WHERE nombre =\'' . $usuario . '\' AND contrasenia = \'' . $contrasenia . '\'';
 
   $resultado = $conexion->query($sql);
 
-  if ($fila = $resultado->fetch_array()) {
+  if ($resultado->num_rows > 0) {
+    $fila = $resultado->fetch_array();
+    $_SSESION["idAlumno"] = $fila["idALumno"];
     header("Location: ../disenio/agradecimiento.php");
     exit();
   } else header("Location: ../disenio/registrar.php");

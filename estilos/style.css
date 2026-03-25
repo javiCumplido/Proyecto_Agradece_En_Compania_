@@ -80,7 +80,7 @@ main {
 form, article {
     background: rgba(255, 255, 255, 0.85);
     height: 85%;
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
     padding: .5rem;
     border-radius: 15px;
@@ -128,7 +128,7 @@ label {
 
 select, textarea, button, input {
     width: 40%;
-    height: 15%;
+    height: 11%;
     margin-top: .6rem;
     padding: 0.8rem;
     border: 1px solid #ccc;
@@ -167,7 +167,7 @@ select:open::picker-icon {
 }
 
 textarea {
-    height: 16%;
+    height: 15%;
     resize: none;
 }
 

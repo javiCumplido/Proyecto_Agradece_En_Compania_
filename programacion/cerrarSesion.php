@@ -1,5 +1,5 @@
 <?php
 session_start();
-$_SESSION["activo"] = 0;
+$_SESSION = array();
 session_destroy();
 header("Location: ../disenio/index.php");

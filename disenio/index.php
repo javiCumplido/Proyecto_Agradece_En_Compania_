@@ -1,13 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION["activo"])) {
-    // if (session_status() == 2) {
-    header("Location: ./agradecimiento.php");
-    exit(0);
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 

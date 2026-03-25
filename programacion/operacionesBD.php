@@ -3,7 +3,6 @@
 include 'constantes.php';
 
 
-
 function conectar()
 {
 
