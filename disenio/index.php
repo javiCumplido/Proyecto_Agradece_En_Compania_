@@ -18,8 +18,8 @@
             <h2>Inicia sesión</h2>
             <label for="nombre">Correo electrónico</label>
             <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre de usuario">
-            <label for="contrasenia">Contraseña</label>
-            <input type="password" id="contrasenia" name="contrasenia" placeholder="Introduce tu contraseña">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña">
             <button type="submit">Entrar</button>
         </form>
     </main>

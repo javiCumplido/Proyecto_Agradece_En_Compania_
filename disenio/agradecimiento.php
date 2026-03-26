@@ -25,7 +25,7 @@
   <main>
     <form method="post" action="../programacion/insertarAgradecimiento.php">
       <label for="nombre">Para:</label>
-      <select name="idAlumno" id="nombre" required>
+      <select name="NIA" id="nombre" required>
         <button>
           <selectedcontent></selectedcontent>
         </button>

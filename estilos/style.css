@@ -88,6 +88,8 @@ form, article {
     border-top: 4px solid #c5a059;
     display: inline-block;
     align-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 section {

@@ -9,8 +9,8 @@ CREATE TABLE Usuario
 	nombre VARCHAR(100) NOT NULL,
 	password VARCHAR(100) NOT NULL,
 	nombreJesuita VARCHAR(100) NOT NULL,
-	nombreImagen VARCHAR(30) NOT NULL, -- Almacena solo el nombre del archivo
 	informacionJesuita MEDIUMTEXT NOT NULL, 
+	web varchar(30) NOT NULL,	--	nombre de la carpeta que contiene miAgradecimiento, la imagen.
 	CONSTRAINT PK_Usuario PRIMARY KEY (NIA)
 );
 
@@ -30,7 +30,7 @@ CREATE TABLE Agradecimiento
 );
 
 -- Índices solicitados para Agradecimiento
-CREATE UNIQUE INDEX UN_Agradecimiento_Receptor ON Agradecimiento(idUsuarioReceptor);
+CREATE UNIQUE INDEX UN_Agradecimiento_Receptor ON Agradecimiento(idUsuarioEmisor, idUsuarioReceptor);
 
 -- Relaciones de Integridad y Reglas de Negocio
 ALTER TABLE Agradecimiento 
@@ -44,11 +44,11 @@ ADD CONSTRAINT CK_Agradecimiento_Distintos CHECK (idUsuarioEmisor <> idUsuarioRe
 -- ######################################################
 
 -- ######## USUARIO ########
-INSERT INTO Usuario (NIA, nombre, password, nombreJesuita, nombreImagen, informacionJesuita) 
+INSERT INTO Usuario (NIA, nombre, password, nombreJesuita, informacionJesuita, web) 
 VALUES 
-('01', 'Alberto García', 'pass123', 'San Ignacio de Loyola', 'Ignacio.png', 'Fundador de la Compañía de Jesús, conocido por sus ejercicios espirituales.'),
-('02', 'Beatriz López', 'secr456', 'San Francisco Javier', 'Javier.png', 'Misionero jesuita que llevó el cristianismo al lejano oriente.'),
-('03', 'Carlos Ruiz', 'admin789', 'San Alberto Hurtado', 'Hurtado.png', 'Jesuita chileno conocido por su gran labor social y caridad.');
+('01', 'Alberto García', 'pass123', 'San Ignacio de Loyola', 'Fundador de la Compañía de Jesús, conocido por sus ejercicios espirituales.', 'SanIgnaciodeLoyola'),
+('02', 'Beatriz López', 'secr456', 'San Francisco Javier', 'Misionero jesuita que llevó el cristianismo al lejano oriente.', 'SanFranciscoJavier'),
+('03', 'Carlos Ruiz', 'admin789', 'San Alberto Hurtado', 'Jesuita chileno conocido por su gran labor social y caridad.', 'SanAlbertoHurtado');
 
 
 -- ######## AGRADECIMIENTO ########
