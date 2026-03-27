@@ -18,7 +18,7 @@
     <hr />
   </header>
   <nav>
-    <a href="#">Agradecer</a>
+    <a href="./agradecimiento.php">Agradecer</a>
     <a href="./ver_agradecimientos.php">Recibir</a>
     <a href="../programacion/cerrarSesion.php">Cerrar Sesión</a>
   </nav>
@@ -30,8 +30,8 @@
           <selectedcontent></selectedcontent>
         </button>
         <?php
-        include '../programacion/operacionesBD.php';
-        recogerUsuarios();
+          include '../programacion/operacionesBD.php';
+          recogerUsuarios();
         ?>
       </select>
       <label for="mensaje">Quiero agradecerte:</label>

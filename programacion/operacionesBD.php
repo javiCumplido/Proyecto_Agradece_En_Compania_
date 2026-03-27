@@ -16,25 +16,24 @@ function conectar()
 
 function recogerUsuarios()
 {
-  session_start();
-
-  $conexion2 = conectar();
   $conexion = conectar();
 
-  $sql2 = "SELECT idUsuarioReceptor FROM Agradecimiento WHERE idUsuarioEmisor = '" . $_SESSION["idSesion"] . "'";
+  session_start();
 
-  $resultado2 = $conexion2->query($sql2);
+  //  TENIA COMPROBADO QUE NO MUESTRE A UN USUARIO QUE YA HAS MANDADO PERO COMO DA PROBLEMA MEJOR LO HE QUITADO
 
-  while ($fila2 = $resultado2->fetch_array()) {
-
-    $sql = "SELECT NIA, nombre FROM Usuario WHERE NIA <> '" . $_SESSION["idSesion"] . "' OR NIA <> '" . $fila2["idUsuarioReceptor"] . "'";
-    $resultado = $conexion->query($sql);
-    if ($resultado->num_rows == 1){
-      $fila = $resultado->fetch_array();
-      echo '<option value="' . $fila["NIA"] . '"' . '>' . $fila["nombre"] . '</option>';
-    }
-
-  }
+  // $sql = "SELECT idUsuarioReceptor FROM Agradecimiento WHERE idUsuarioEmisor='" . $_SESSION["idSesion"] . "'";
+  // $resultado = $conexion->query($sql);
+  // while ($fila = $resultado->fetch_array()){
+    // $sql = "SELECT NIA, nombre FROM Usuario WHERE NIA <> '" . $fila["idUsuarioReceptor"] . "' AND NIA <> '" . $_SESSION["idSesion"] . "'";
+    // $resultado2 = $conexion->query($sql);
+    // while ($fila2 = $resultado2->fetch_array()){
+    //   echo "<option value=\"" . $fila2["NIA"] . "\">" . $fila2["nombre"] . "</option>";
+      $sql = "SELECT NIA, nombre FROM Usuario WHERE NIA <> '" . $_SESSION["idSesion"] . "'";
+      $resultado2 = $conexion->query($sql);
+      while ($fila2 = $resultado2->fetch_array())
+        echo "<option value=\"" . $fila2["NIA"] . "\">" . $fila2["nombre"] . "</option>";
+  // }
 
   $conexion->close();
 }

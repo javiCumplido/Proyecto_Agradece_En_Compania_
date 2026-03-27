@@ -2,7 +2,6 @@
 
   include "operacionesBD.php";
 
-  session_start();
 
   $usuario = $_POST["nombre"];
   $password = $_POST["password"];
@@ -14,6 +13,7 @@
   $resultado = $conexion->query($sql);
 
   if ($resultado->num_rows > 0) {
+    session_start();
     $fila = $resultado->fetch_array();
     $_SESSION["idSesion"] = $fila["NIA"];
     header("Location: ../disenio/agradecimiento.php");

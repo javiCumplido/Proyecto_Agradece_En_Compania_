@@ -20,8 +20,8 @@
             <input type="text" name="NIA" id="NIA" placeholder="Introduce tu NIA" required />
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre de usuario" required />
-            <label for="contrasenia">Contraseña</label>
-            <input type="password" id="contrasenia" name="contrasenia" placeholder="Introduce tu contraseña" required />
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required />
             <label for="jesuita">Jesuita</label>
             <input type="text" name="jesuita" id="jesuita" placeholder="Introduce tu Jesuita" required />
             <label for="informacion">informacion</label>

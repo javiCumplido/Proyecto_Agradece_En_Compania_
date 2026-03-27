@@ -15,7 +15,7 @@
 
     <nav>
         <a href="./agradecimiento.php">Agradecer</a>
-        <a href="#">Recibir</a>
+        <a href="./ver_agradecimientos.php">Recibir</a>
         <a href="../programacion/cerrarSesion.php">Cerrar Sesión</a>
     </nav>
 
@@ -23,6 +23,7 @@
         <h2>Mis Agradecimientos</h2>
         <article>
             <?php include '../programacion/verMisAgradecimientos.php'; ?>
+            <?php echo $_SESSION["idSesion"] ?>
         </article> 
     </main>
 
